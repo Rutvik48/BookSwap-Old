@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>819665618250-3f1a164547hrk43qvq0202lj4aookr19.apps.googleusercontent.com</string>
+	<string>819665618250-9ibm94tcochdhg7nci3tot5a0dc9u1pc.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.819665618250-3f1a164547hrk43qvq0202lj4aookr19</string>
+	<string>com.googleusercontent.apps.819665618250-9ibm94tcochdhg7nci3tot5a0dc9u1pc</string>
 	<key>API_KEY</key>
 	<string>AIzaSyC6L7gktmdEkMlWgt7sU3vqrjRE7JAwo2o</string>
 	<key>GCM_SENDER_ID</key>
@@ -13,7 +13,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.BookSwap</string>
+	<string>com.RV.BookSwap</string>
 	<key>PROJECT_ID</key>
 	<string>bookswap-817f6</string>
 	<key>STORAGE_BUCKET</key>
@@ -29,7 +29,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:819665618250:ios:8b66866836eb8653236db3</string>
+	<string>1:819665618250:ios:2c09ccd212d54e81236db3</string>
 	<key>DATABASE_URL</key>
 	<string>https://bookswap-817f6.firebaseio.com</string>
 </dict>

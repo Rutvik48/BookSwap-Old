@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -21,8 +21,8 @@
 		B302F26923495A5E00F4E537 /* GlobalBookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302F26823495A5E00F4E537 /* GlobalBookList.swift */; };
 		B302F26B23495A7F00F4E537 /* HistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302F26A23495A7F00F4E537 /* HistoryScreen.swift */; };
 		B302F26D234967A100F4E537 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302F26C234967A100F4E537 /* HomeScreen.swift */; };
+		B3662636234D005100538360 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3662635234D005100538360 /* GoogleService-Info.plist */; };
 		B38807DD234A9DC900CB43D0 /* photo-1533299346856-b1a85808f2ec.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B38807DC234A9DC900CB43D0 /* photo-1533299346856-b1a85808f2ec.jpeg */; };
-		B3955889234BF4AD0079EF6A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3955888234BF4AD0079EF6A /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,8 +44,8 @@
 		B302F26823495A5E00F4E537 /* GlobalBookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalBookList.swift; sourceTree = "<group>"; };
 		B302F26A23495A7F00F4E537 /* HistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreen.swift; sourceTree = "<group>"; };
 		B302F26C234967A100F4E537 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		B3662635234D005100538360 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B38807DC234A9DC900CB43D0 /* photo-1533299346856-b1a85808f2ec.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo-1533299346856-b1a85808f2ec.jpeg"; sourceTree = "<group>"; };
-		B3955888234BF4AD0079EF6A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,7 +132,7 @@
 		B302F25C2349590900F4E537 /* Other */ = {
 			isa = PBXGroup;
 			children = (
-				B3955888234BF4AD0079EF6A /* GoogleService-Info.plist */,
+				B3662635234D005100538360 /* GoogleService-Info.plist */,
 				B38807DC234A9DC900CB43D0 /* photo-1533299346856-b1a85808f2ec.jpeg */,
 				B302F255234929E000F4E537 /* bookcrab.png */,
 			);
@@ -155,7 +155,6 @@
 				A8BE5C45564295069C668CFA /* Pods-BookSwap.debug.xcconfig */,
 				8EACBD7090270D65C42C60A7 /* Pods-BookSwap.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -171,6 +170,7 @@
 				B302F23D234925BB00F4E537 /* Frameworks */,
 				B302F23E234925BB00F4E537 /* Resources */,
 				E97B222936F75DB57EFB7A3E /* [CP] Embed Pods Frameworks */,
+				6CFD504D56FFD10CC15C0F12 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -224,13 +224,30 @@
 				B302F24B234925BF00F4E537 /* Assets.xcassets in Resources */,
 				B302F256234929E000F4E537 /* bookcrab.png in Resources */,
 				B302F249234925BB00F4E537 /* Main.storyboard in Resources */,
-				B3955889234BF4AD0079EF6A /* GoogleService-Info.plist in Resources */,
+				B3662636234D005100538360 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		6CFD504D56FFD10CC15C0F12 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookSwap/Pods-BookSwap-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookSwap/Pods-BookSwap-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookSwap/Pods-BookSwap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		7EF1D9B2583F0208157F58A3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
