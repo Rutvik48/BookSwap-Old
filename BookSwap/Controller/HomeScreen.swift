@@ -29,11 +29,26 @@ class HomeScreen: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func startLogInProcess(){
+        
+    }
+    
+    func  checkInput(_ name: String, _ psw: String) -> Bool {
+        
+        return false
+    }
     
     
     @IBAction func logInBtnPressed(_ sender: Any) {
+        
         performSegue(withIdentifier: "toProfileScreen",  sender: self)
+        if (checkInput( userNameLbl.text!, pswdLbl.text! )){
+            
+            startLogInProcess()
+            
+        }
     }
+
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "toProfileScreen"{

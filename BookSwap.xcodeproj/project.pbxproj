@@ -21,6 +21,9 @@
 		B302F26923495A5E00F4E537 /* GlobalBookList.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302F26823495A5E00F4E537 /* GlobalBookList.swift */; };
 		B302F26B23495A7F00F4E537 /* HistoryScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302F26A23495A7F00F4E537 /* HistoryScreen.swift */; };
 		B302F26D234967A100F4E537 /* HomeScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B302F26C234967A100F4E537 /* HomeScreen.swift */; };
+		B3A16B18235132B000777E2A /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B3A16B17235132AF00777E2A /* GoogleService-Info.plist */; };
+		B3A16B1A23522A2700777E2A /* photo-1533299346856-b1a85808f2ec.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = B3A16B1923522A2700777E2A /* photo-1533299346856-b1a85808f2ec.jpeg */; };
+		B3A16B1C2352324500777E2A /* SignUpScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3A16B1B2352324500777E2A /* SignUpScreen.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +45,9 @@
 		B302F26823495A5E00F4E537 /* GlobalBookList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalBookList.swift; sourceTree = "<group>"; };
 		B302F26A23495A7F00F4E537 /* HistoryScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryScreen.swift; sourceTree = "<group>"; };
 		B302F26C234967A100F4E537 /* HomeScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreen.swift; sourceTree = "<group>"; };
+		B3A16B17235132AF00777E2A /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B3A16B1923522A2700777E2A /* photo-1533299346856-b1a85808f2ec.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "photo-1533299346856-b1a85808f2ec.jpeg"; sourceTree = "<group>"; };
+		B3A16B1B2352324500777E2A /* SignUpScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpScreen.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,9 +121,10 @@
 		B302F25B234958C200F4E537 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B302F2612349599E00F4E537 /* Books */,
 				B302F26C234967A100F4E537 /* HomeScreen.swift */,
+				B3A16B1B2352324500777E2A /* SignUpScreen.swift */,
 				B302F25D2349596300F4E537 /* ProfileScreen.swift */,
+				B302F2612349599E00F4E537 /* Books */,
 				B302F25F2349598400F4E537 /* FriendListScreen.swift */,
 				B302F26823495A5E00F4E537 /* GlobalBookList.swift */,
 				B302F26A23495A7F00F4E537 /* HistoryScreen.swift */,
@@ -128,6 +135,8 @@
 		B302F25C2349590900F4E537 /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				B3A16B1923522A2700777E2A /* photo-1533299346856-b1a85808f2ec.jpeg */,
+				B3A16B17235132AF00777E2A /* GoogleService-Info.plist */,
 				B302F255234929E000F4E537 /* bookcrab.png */,
 			);
 			path = Other;
@@ -164,7 +173,7 @@
 				B302F23D234925BB00F4E537 /* Frameworks */,
 				B302F23E234925BB00F4E537 /* Resources */,
 				E97B222936F75DB57EFB7A3E /* [CP] Embed Pods Frameworks */,
-				6CFD504D56FFD10CC15C0F12 /* [CP] Copy Pods Resources */,
+				FEC821F35276F9D4C98CBF48 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,32 +224,16 @@
 			files = (
 				B302F24E234925BF00F4E537 /* LaunchScreen.storyboard in Resources */,
 				B302F24B234925BF00F4E537 /* Assets.xcassets in Resources */,
+				B3A16B18235132B000777E2A /* GoogleService-Info.plist in Resources */,
 				B302F256234929E000F4E537 /* bookcrab.png in Resources */,
+				B3A16B1A23522A2700777E2A /* photo-1533299346856-b1a85808f2ec.jpeg in Resources */,
 				B302F249234925BB00F4E537 /* Main.storyboard in Resources */,
-				B3662636234D005100538360 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		6CFD504D56FFD10CC15C0F12 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BookSwap/Pods-BookSwap-resources-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Copy Pods Resources";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-BookSwap/Pods-BookSwap-resources-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookSwap/Pods-BookSwap-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		7EF1D9B2583F0208157F58A3 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -280,6 +273,23 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookSwap/Pods-BookSwap-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
+		FEC821F35276F9D4C98CBF48 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookSwap/Pods-BookSwap-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BookSwap/Pods-BookSwap-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BookSwap/Pods-BookSwap-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -292,6 +302,7 @@
 				B302F244234925BB00F4E537 /* AppDelegate.swift in Sources */,
 				B302F26B23495A7F00F4E537 /* HistoryScreen.swift in Sources */,
 				B302F26723495A1500F4E537 /* HoldingBookListScreen.swift in Sources */,
+				B3A16B1C2352324500777E2A /* SignUpScreen.swift in Sources */,
 				B302F26D234967A100F4E537 /* HomeScreen.swift in Sources */,
 				B302F265234959DE00F4E537 /* WishListScreen.swift in Sources */,
 				B302F263234959C100F4E537 /* OwnedBookScreen.swift in Sources */,
@@ -451,7 +462,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aasliev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RV.BookSwap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
@@ -473,7 +484,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aasliev;
+				PRODUCT_BUNDLE_IDENTIFIER = com.RV.BookSwap;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;

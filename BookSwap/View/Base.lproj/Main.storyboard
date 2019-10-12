@@ -5,7 +5,7 @@
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -197,7 +197,7 @@
                                 </subviews>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GnD-7o-eZk">
-                                <rect key="frame" x="299" y="88" width="76" height="36"/>
+                                <rect key="frame" x="289" y="88" width="76" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <state key="normal" title="Sign Out"/>
                                 <connections>
@@ -216,7 +216,7 @@
                             <constraint firstItem="N5p-vK-QNJ" firstAttribute="centerX" secondItem="gOE-c7-qfX" secondAttribute="centerX" id="RHO-Oz-kum"/>
                             <constraint firstItem="nCO-yG-4og" firstAttribute="trailing" secondItem="iaA-hV-j0g" secondAttribute="trailing" constant="20" id="Xti-p3-08Y"/>
                             <constraint firstItem="nCO-yG-4og" firstAttribute="trailing" secondItem="N5p-vK-QNJ" secondAttribute="trailing" constant="20" id="hp4-uH-egh"/>
-                            <constraint firstItem="nCO-yG-4og" firstAttribute="trailing" secondItem="GnD-7o-eZk" secondAttribute="trailing" id="lZV-Mc-nl9"/>
+                            <constraint firstItem="nCO-yG-4og" firstAttribute="trailing" secondItem="GnD-7o-eZk" secondAttribute="trailing" constant="10" id="lZV-Mc-nl9"/>
                             <constraint firstItem="N5p-vK-QNJ" firstAttribute="top" secondItem="iaA-hV-j0g" secondAttribute="bottom" constant="10" id="oxd-wZ-btX"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="nCO-yG-4og"/>
@@ -418,7 +418,7 @@
         <!--Sign Up-->
         <scene sceneID="Zni-Fc-I7a">
             <objects>
-                <viewController title="Sign Up" id="6uB-oO-Ruo" sceneMemberID="viewController">
+                <viewController title="Sign Up" id="6uB-oO-Ruo" customClass="SignUpScreen" customModule="BookSwap" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wrr-mz-Dur">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -442,6 +442,9 @@
                                         <rect key="frame" x="0.0" y="120" width="275" height="41"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                         <state key="normal" title="Sign Up"/>
+                                        <connections>
+                                            <action selector="signUpPressed:" destination="6uB-oO-Ruo" eventType="touchUpInside" id="7sq-nB-3aP"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LkX-Sk-aZ7">
                                         <rect key="frame" x="0.0" y="191" width="275" height="41"/>
@@ -455,6 +458,7 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign Up Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U7c-uh-1kc">
+                                <rect key="frame" x="110.00000000000001" y="158.66666666666666" width="155.33333333333337" height="31.333333333333343"/>
                                 <fontDescription key="fontDescription" type="italicSystem" pointSize="26"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -471,6 +475,11 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="fwl-5O-9DE"/>
                     </view>
+                    <connections>
+                        <outlet property="password" destination="Mlx-bf-SiS" id="nYF-oA-btZ"/>
+                        <outlet property="psw" destination="Mlx-bf-SiS" id="sZX-YM-Une"/>
+                        <outlet property="userName" destination="HOy-Od-2Bp" id="yDL-gz-n69"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fyH-M8-jzt" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="oon-jH-lW0" userLabel="Exit" sceneMemberID="exit"/>
